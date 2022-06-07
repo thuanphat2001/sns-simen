@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SNS Simen</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -13,7 +13,11 @@
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -22,8 +26,8 @@
             <div class="container">
                 <ul class="top-header__list-left">
                     <div class="list-lang">
-                        <li class="top-header__item">
-                            <a href="" class="top-header__link language-main ">
+                        <li class="top-header__item" id="languae-tonge">
+                            <a href="" class="top-header__link language-main">
                                 <img src="http://demo.snstheme.com/wp/simen/wp-content/themes/snssimen/assets/img/en.jpg"
                                     alt="en" class="top-header__img">
                                 <span>English</span>
@@ -157,33 +161,53 @@
             <div class="container">
                 <div class="menu-wrap">
                     <ul class="menu-left">
-                      <li class="menu-left__item">
-                        <a href="#" class="menu-left__link menu-left__link--active">HOME</a>
-                      </li>
-                      <li class="menu-left__item">
-                        <a href="#" class="menu-left__link">FURNITURE</a>
-                      </li>
-                      <li class="menu-left__item">
-                        <a href="#" class="menu-left__link">COFFEE TABLES</a>
-                      </li>
-                      <li class="menu-left__item">
-                        <a href="#" class="menu-left__link">SOFAS</a>
-                      </li>
-                      <li class="menu-left__item">
-                        <a href="#" class="menu-left__link">BEDROOM FURNITURE</a>
-                      </li>
-                      <li class="menu-left__item">
-                        <a href="#" class="menu-left__link">SHOP</a>
-                      </li>
-                      <li class="menu-left__item">
-                        <a href="#" class="menu-left__link">BLOG</a>
-                      </li>
-                      <li class="menu-left__item">
-                        <a href="#" class="menu-left__link">SHORTCODES</a>
-                      </li>
-                      <li class="menu-left__item">
-                        <a href="#" class="menu-left__link">CONTACT US</a>
-                      </li>
+                        <li class="menu-left__item">
+                            <a href="#" class="menu-left__link menu-left__link--active">HOME</a>
+                            <div class="menu-home__select">
+                                <ul class="menu-home__option">
+                                    <li class="menu-home__item">
+                                        <a href="#" class="menu-home__link menu-home__link--active">Home Page 1</a>
+                                    </li>
+                                    <li class="menu-home__item">
+                                        <a href="#" class="menu-home__link">Home Page 2</a>
+                                    </li>
+                                    <li class="menu-home__item">
+                                        <a href="#" class="menu-home__link">Home Page 3</a>
+                                    </li>
+                                    <li class="menu-home__item">
+                                        <a href="#" class="menu-home__link">Home Page 4</a>
+                                    </li>
+                                    <li class="menu-home__item">
+                                        <a href="#" class="menu-home__link">Home Page 5</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="menu-left__item">
+                            <a href="#" class="menu-left__link">FURNITURE</a>
+                        </li>
+                        <li class="menu-left__item">
+                            <a href="#" class="menu-left__link">COFFEE TABLES</a>
+                        </li>
+                        <li class="menu-left__item">
+                            <a href="#" class="menu-left__link">SOFAS</a>
+                        </li>
+                        <li class="menu-left__item">
+                            <a href="#" class="menu-left__link">BEDROOM FURNITURE</a>
+                        </li>
+                        <li class="menu-left__item">
+                            <a href="#" class="menu-left__link">SHOP</a>
+                        </li>
+                        <li class="menu-left__item">
+                            <a href="#" class="menu-left__link">BLOG</a>
+                        </li>
+                        <li class="menu-left__item">
+                            <a href="#" class="menu-left__link">SHORTCODES</a>
+                        </li>
+                        <li class="menu-left__item">
+                            <a href="#" class="menu-left__link">CONTACT US</a>
+                        </li>
                     </ul>
                     <ul class="menu-right">
                         <li class="menu-right__item">
@@ -194,10 +218,10 @@
                             <span class="cart-num">0</span>
                             <span class="cart-detail">( items )</span>
                         </li>
-    
+
                     </ul>
                 </div>
-                
+
             </div>
         </div>
 
