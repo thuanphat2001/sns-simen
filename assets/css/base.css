@@ -3,6 +3,7 @@
     --black-color: #000;
     --text-color: #888;
     --primary-color:#e34444;
+    --heading-color:#333;
 }
 
 * {
@@ -14,6 +15,7 @@ html {
     line-height: 1.6rem;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+    color: var(--text-color);
 }
 
 a {
