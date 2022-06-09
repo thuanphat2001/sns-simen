@@ -456,7 +456,8 @@
 .menu-blog__option,
 .menu-right__option,
 .menu-subblog__option,
-.menu-furniture__list {
+.menu-furniture__list,
+.menu-shop__list {
   list-style: none;
   padding-left: 0;
   margin: 12px 0;
@@ -470,14 +471,16 @@
 .menu-home__link:hover,
 .menu-blog__link:hover,
 .menu-subblog__link:hover,
-.menu-furniture__link:hover {
+.menu-furniture__link:hover,
+.menu-shop__link:hover {
   color: var(--primary-color);
 }
 
 .menu-home__link,
 .menu-blog__link,
 .menu-subblog__link,
-.menu-furniture__link {
+.menu-furniture__link,
+.menu-shop__link {
   color: var(--text-color);
   display: inline-block;
   cursor: pointer;
@@ -512,14 +515,24 @@
   display: block;
 }
 
-.menu-blog__item:nth-child(7):hover .menu-subblog__select {
-  display: block;
-}
 .menu-right__item:nth-child(2):hover .menu-right__select {
   display: block;
 }
 
 .menu-left__item:nth-child(2):hover .menu-furniture__select {
+  display: block;
+}
+.menu-left__item:nth-child(5):hover .menu-bedroom__select {
+  display: block;
+}
+.menu-left__item:nth-child(6):hover .menu-shop__select {
+  display: block;
+}
+
+.menu-blog__item:nth-child(7):hover .menu-subblog__select {
+  display: block;
+}
+.menu-left__item:nth-child(8):hover .menu-shop__select {
   display: block;
 }
 
@@ -577,7 +590,8 @@
 }
 
 .menu-furniture,
-.menu-bedroom__item {
+.menu-bedroom__item,
+.menu-shop {
   padding: 16px 0 0 16px;
 }
 
@@ -614,7 +628,7 @@
   border-top: none;
   font-size: 1rem;
   padding-right: 28px;
-  /* display: none; */
+  display: none;
   animation: moveTop ease-in 0.3s;
   background-color: var(--white-color);
   border: 1px solid #eaeaea;
@@ -645,4 +659,26 @@
   cursor: pointer;
   color: var(--primary-color);
 
+}
+
+/* Shop layout */
+
+.menu-shop__select {
+  position: absolute;
+  top: calc(100% - 3px);
+  left: 0px;
+  z-index: 1;
+  width: 1190px;
+  border-top: none;
+  font-size: 1rem;
+  padding-right: 28px;
+  display: none;
+  animation: moveTop ease-in 0.3s;
+  background-color: var(--white-color);
+  border: 1px solid #eaeaea;
+  border-radius: 2px;
+}
+
+.menu-shop__img {
+  max-width: 100%;
 }
