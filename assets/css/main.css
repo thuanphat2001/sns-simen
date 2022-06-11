@@ -762,6 +762,7 @@
 
 /* Section content */
 .section-content {
+  position: relative;
   margin-bottom: 55px;
 }
 .nav-tab {
@@ -948,6 +949,7 @@
   display: none;
   animation: moveRightIn ease 0.5s;
   animation-fill-mode: forwards;
+  cursor: pointer;
 }
 
 .box-inner {
@@ -961,6 +963,7 @@
   display: none;
   justify-content: center;
   align-items: center;
+  transition: all linear 0.4s;
 }
 
 .add-cart:hover {
@@ -968,7 +971,13 @@
   background-color: var(--primary-color);
 }
 
+/* .add-cart:hover .add-cart__icon{
+  animation: shake ease 0.3;
+  animation-iteration-count: 3;
+} */
+
 .box-inner i {
+  position: relative;
   flex: 1;
   font-size: 1.2rem;
   display: inline-block;
@@ -1023,3 +1032,43 @@
 }
 
 /* Nhớ sửa item trong layout lại có attribute flex : 1 */
+
+.more-item-btn {
+  color: #686766;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 4rem;
+  padding: 0 75px;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid #eaeaea;
+  background-color: var(--white-color);
+  display: inline-block;
+  border-radius: 4px;
+  transition: all linear 0.3s;
+
+}
+
+.more-item-btn:hover {
+  color: var(--white-color);
+  background-color: var(--primary-color);
+}
+
+.wrap-load-item {
+  text-align: center;
+  margin: 16px 0 40px;
+}
+
+
+/* Shake item */
+@keyframes shake {
+  from {
+    transform: translateX(5px);
+  }
+  to {
+    transform: translateX(1px);
+  }
+}
+/* Tooltip */
+
+
