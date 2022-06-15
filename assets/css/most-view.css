@@ -1,0 +1,122 @@
+.most-view {
+    margin-bottom: 32px;
+}
+
+
+.most-view__top {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.most-view__top::after {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    height: 1px;
+    width: 78%;
+    background-color: rgb(234, 234, 234);
+    top: 50%;
+    right: 8%;
+    transform: translateY(-50%);
+}
+
+.product-list--small {
+    flex-wrap: wrap;
+}
+
+.wrap-product--small {
+    text-align: left;
+    max-width: 297px;
+    position: relative;
+    padding: 0px 30px 0 0px;
+}
+
+.wrap-img--small {
+    max-width: 134px;
+    height: inherit;
+}
+
+.product-img--small {
+    max-width: 112px;
+    float: left;
+}
+
+.most-view__heading {
+    font-size: 2rem;
+    color: var(--heading-color);
+    font-weight: 700;
+    line-height: 2rem;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.most-view__control {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.most-view__content {
+    margin-left: 12px;
+}
+
+.most-view__control a {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #eaeaea;
+}
+
+.left-icon,
+.right-icon {
+    color: var(--gray-color);
+    line-height: 3rem;
+    font-size: 1rem;
+}
+
+.most-view__control a:hover {
+    background-color: var(--primary-color);
+}
+
+.most-view__control a:hover .left-icon {
+    color: var(--white-color);
+}
+
+.most-view__control a:hover .right-icon {
+    color: var(--white-color);
+}
+
+.wrap-item-info-right {
+    float: right;
+    max-width: 144px;
+    transform: translate(18%,-170%);
+    padding: 0 10px;
+    position: relative;
+}
+
+.product-name--small {
+    font-size: 1.3rem;
+}
+
+.most-view__card {
+    position: absolute;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: var(--text-color);
+    transition: all linear 0.4s;
+}
+
+.most-view__card:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.product-rating--most-view {
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+}

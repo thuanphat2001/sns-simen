@@ -1,0 +1,15 @@
+.member-list-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 52px;
+}
+
+.member-item {
+    max-width: 270px;
+}
+
+.member-item:nth-child(1) {
+    max-width: 570px;
+}

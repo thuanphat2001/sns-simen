@@ -1,5 +1,5 @@
 .web {
-  max-width: 1540px;
+  min-width: 1519px;
 }
 
 .top-header {
@@ -39,7 +39,7 @@
   position: absolute;
   right: 54%;
   top: 50%;
-  g: solid transparent;
+  border: solid transparent;
   pointer-events: none;
   border-top-color: #888;
   border-width: 4.5px;
@@ -86,7 +86,11 @@
   line-height: 39px;
 }
 
-#languae-tonge::after {
+.top-header__link:hover {
+  color: var(--text-color);
+}
+
+#language-tonge::after {
   content: "";
   width: 1px;
   height: 10px;
@@ -190,6 +194,10 @@
   cursor: pointer;
 }
 
+.language__link:hover {
+  color: var(--text-color);
+}
+
 /* Currency modal*/
 
 .currency__select {
@@ -205,6 +213,7 @@
   display: none;
   animation: moveTop ease-in 0.3s;
   background-color: var(--white-color);
+  transition: all linear 0.3s;
 }
 
 .currency__select::after {
@@ -440,6 +449,7 @@
   background-color: var(--white-color);
   border: 1px solid #eaeaea;
   border-radius: 2px;
+  transition: all linear 0.3s;
 }
 
 .menu-home__select::after {
@@ -495,7 +505,7 @@
 .blog-icon {
   float: right;
 }
-/* Sub-Blog layoyut*/
+/* Sub-Blog layout*/
 .menu-subblog__select {
   position: absolute;
   top: calc(100% - 22px);
@@ -509,6 +519,7 @@
   background-color: var(--white-color);
   border: 1px solid #eaeaea;
   border-radius: 2px;
+  transition: all linear 0.3s;
 }
 
 .menu-left__item:nth-child(7):hover .menu-blog__select {
@@ -522,6 +533,7 @@
 .menu-left__item:nth-child(2):hover .menu-furniture__select {
   display: block;
 }
+
 .menu-left__item:nth-child(5):hover .menu-bedroom__select {
   display: block;
 }
@@ -555,6 +567,7 @@
   background-color: var(--white-color);
   border: 1px solid #eaeaea;
   border-radius: 2px;
+  transition: all linear 0.3s;
 }
 
 .menu-right__option .menu-right__item {
@@ -570,6 +583,7 @@
   width: 100%;
   flex-wrap: nowrap;
   /* text-align: center; */
+  transition: all linear 0.3s;
 }
 
 .menu-furniture__select {
@@ -585,6 +599,7 @@
   background-color: var(--white-color);
   border: 1px solid #eaeaea;
   border-radius: 2px;
+  transition: all linear 0.3s;
 }
 
 .menu-furniture,
@@ -595,8 +610,11 @@
 
 .menu-heading {
   position: relative;
-  padding: 0 0 0 16px;
+  padding: 20px 0 0 16px;
   color: var(--heading-color);
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-weight: bold;
 }
 
 .menu-heading::after {
@@ -631,6 +649,7 @@
   background-color: var(--white-color);
   border: 1px solid #eaeaea;
   border-radius: 2px;
+  transition: all linear 0.3s;
 }
 
 .menu-desc {
@@ -674,6 +693,7 @@
   background-color: var(--white-color);
   border: 1px solid #eaeaea;
   border-radius: 2px;
+  transition: all linear 0.3s;
 }
 
 .menu-shop__img {
@@ -686,8 +706,16 @@
   margin-bottom: 50px;
 }
 
-.section-hero__left {
-  position: relative;
+.carousel-item {
+  height: 100%;
+}
+
+.carousel-img {
+  height: 100%;
+}
+
+.carousel {
+  height: 100%;
 }
 
 .section-hero__right-b {
@@ -700,13 +728,14 @@
 
 .section-hero__img-b-l {
   max-width: 100%;
-  height: 265px;
   cursor: pointer;
+  transition: all linear 0.3s;
 }
 .section-hero__img-b-r {
   max-width: 100%;
-  height: 265px;
+  height: 100%;
   cursor: pointer;
+  transition: all linear 0.3s;
 }
 .section-hero__wrap-img-b-r {
   padding-left: 22px;
@@ -730,6 +759,7 @@
 
 .section-hero__img-t-r {
   cursor: pointer;
+  width: 100%;
 }
 
 .section-hero__wrap-icons {
@@ -861,9 +891,20 @@
 
 /* Product layout */
 
+.product-list {
+  overflow-x: auto;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.product-list::-webkit-scrollbar {
+  display: none;
+}
+
 .wrap-product {
   text-align: center;
   padding: 0 16px 0 10px;
+  flex-shrink: 0;
 }
 
 .wrap-img {
@@ -947,8 +988,7 @@
   color: var(--white-color);
   background-color: var(--black-color);
   display: none;
-  animation: moveRightIn ease 0.5s;
-  animation-fill-mode: forwards;
+  animation: moveRightIn ease 0.4s alternate forwards;
   cursor: pointer;
 }
 
@@ -958,8 +998,7 @@
   right: 100%;
   width: 100%;
   height: 35px;
-  animation: moveRightOut ease 0.5s;
-  animation-fill-mode: forwards;
+  animation: moveRightOut ease 0.4s alternate forwards;
   display: none;
   justify-content: center;
   align-items: center;
@@ -1120,6 +1159,10 @@
 }
 
 /* Section sug-collection layout */
+
+.section-sug-collection {
+  margin-bottom: 35px;
+}
 
 .wrap-sug-collection {
   margin-bottom: 20px;
