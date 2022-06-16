@@ -1,0 +1,20 @@
+.brand {
+    border-top: 1px solid #eaeaea;
+    margin-bottom: 50px;
+}
+
+.brand__content {
+    max-width: 195px;
+}
+
+.brand-img {
+    width: 195px;
+    height: 107px;
+    text-align: center;
+    display: block;
+}
+
+.brand-img:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.03);
+}
