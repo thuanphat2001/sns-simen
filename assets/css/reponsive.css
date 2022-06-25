@@ -83,7 +83,55 @@
     display: block;
   }
 
- 
+  .member-list-img {
+    flex-wrap: wrap;
+  }
+
+  .member-item:nth-child(1) {
+    max-width: 384px;
+  }
+
+  .member-item {
+    max-width: 300px;
+  }
+
+  .footer__bottom-main {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .footer__copyright {
+    text-align: center;
+  }
+
+  .section-introduce {
+    height: 725px;
+  }
+
+  .section-introduce__right {
+    position: absolute;
+    bottom: 0;
+    padding: 28px;
+  }
+
+  .section-introduce__img {
+    max-width: 384px;
+    left: 0;
+  }
+
+  .brand__content {
+    max-width: 384px;
+  }
+
+  .brand-img {
+    width: 384px;
+    height: 211px;
+  }
+  .row.wrap-brand {
+    flex-wrap: nowrap;
+    overflow: hidden;
+  }
 }
 
 
