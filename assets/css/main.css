@@ -722,6 +722,22 @@
   height: 100%;
 }
 
+.carousel-indicators button {
+  width: 10px!important;
+  height: 10px!important;
+  border: 2px solid #6a6a6a!important;
+  border-radius: 0;
+}
+
+.carousel-indicators button:hover {
+  background-color: var(--primary-color)!important;
+  border: 2px solid var(--primary-color)!important;
+
+}
+.carousel-indicators [data-bs-target] {
+  opacity: 1;
+}
+
 .section-hero__right-b {
   margin-top: 24px;
 }
