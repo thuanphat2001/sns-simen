@@ -150,12 +150,12 @@
     top: 100%;
     right: 14px;
     position: absolute;
-    z-index: 999;
+    z-index: 2;
     min-width: 160px;
     border: 2px solid #f5f5f5;
     border-top: none;
     font-size: 1rem;
-    /* display: none; */
+    display: none;
     animation: moveTop ease-in 0.3s;
     background-color: var(--white-color);
   }
@@ -212,7 +212,7 @@
     color: var(--text-color);
   }
   
-  .respo-top-header:hover .quick-access {
+  .respo-top-header:hover + .quick-access {
     display: block;
   }
 
