@@ -10,6 +10,11 @@
     max-width: 270px;
 }
 
+.member-item:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
 .member-item:nth-child(1) {
     max-width: 570px;
 }

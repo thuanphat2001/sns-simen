@@ -107,8 +107,8 @@
   border-left: 1px solid rgba(136, 136, 136, 0.2);
 }
 
-.top-header__list-right:last-child {
-  border-right: 1px solid rgba(136, 136, 136, 0.2);
+.top-header__list-right:nth-child(4) {
+ 
 }
 
 .top-header__item-right:hover .top-header__name {
@@ -279,6 +279,7 @@
 .header-logo__img {
   width: 146px;
   height: 36px;
+  cursor: pointer;
 }
 .header-widget {
   display: flex;
@@ -557,6 +558,7 @@
 .menu-right {
   cursor: pointer;
   position: relative;
+  margin-bottom: 0;
 }
 
 .menu-right__select {
@@ -915,6 +917,7 @@
   overflow-x: auto;
   display: flex;
   flex-wrap: nowrap;
+  width: 100%;
 }
 
 .product-list::-webkit-scrollbar {
@@ -937,6 +940,7 @@
 
 .start-icon {
   color: #666;
+  font-size: 1.1rem;
 }
 
 .start-icon--gold {

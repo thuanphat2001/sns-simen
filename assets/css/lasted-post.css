@@ -1,3 +1,5 @@
+
+
 .lasted-post {
     margin-bottom: 50px;
 }
@@ -6,9 +8,10 @@
     margin-bottom: 20px;
 }
 
-.lasted-post__content {
+.lasted-post__img:hover {
+    opacity: 0.8;
+    cursor: pointer;
 }
-
 .lasted-post__info {
     display: flex;
     gap: 20px;
@@ -48,6 +51,10 @@
     font-size: 1.4rem;
     font-weight: 600;
     margin-bottom: 4px;
+}
+
+.lasted-post__info-name:hover {
+    color: var(--heading-color);
 }
 .lasted-post__info-details{
     color: #666;

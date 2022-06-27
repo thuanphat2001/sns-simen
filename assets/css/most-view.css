@@ -25,19 +25,19 @@
 
 .product-list--small {
     flex-wrap: wrap;
-    height: 366px;
-    overflow-y: hidden;
 }
 
 .wrap-product--small {
     text-align: left;
     position: relative;
-    padding: 0px 30px 0 0px;
+    padding: 0;
+    height: 137px;
+    margin-bottom: 14px;
 }
 
 .wrap-img--small {
     max-width: 112px;
-    height: inherit;
+    height: 135px!important;
 }
 
 .product-img--small {
@@ -95,7 +95,7 @@
 .wrap-item-info-right {
     float: right;
     max-width: 144px;
-    transform: translate(18%,-170%);
+    transform: translate(5%,-144%);
     padding: 0 10px;
     position: relative;
 }
