@@ -4,12 +4,13 @@
   height: 100%;
   width: 250px;
   overflow: auto;
-  width: 250px;
+  left: -250px;
   background: #222;
   color: #999;
   padding: 15px;
   z-index: 9999;
   left: 0;
+  display: none;
 }
 .resp-nav {
   list-style: none;
@@ -18,26 +19,27 @@
 }
 .resp-item {
   width: 100%;
-  display: inline-block;
+  display: flex;
   align-items: center;
   position: relative;
   line-height: 41px;
   border-bottom: 1px solid #393939;
   font-size: 1.3rem;
 }
-.resp-item-title {
+.resp-item a {
+  color: #999;
 }
-
 .icon-plus {
+  position: absolute;
+  display: inline-block;
+  right: 0;
   cursor: pointer;
-  display: block;
   width: 15px;
   height: 15px;
   border-radius: 100%;
   text-align: center;
   border: 1px solid #999;
   transition: all 0.25s ease;
-  position: relative;
 }
 .icon-plus::after {
   content: "";
