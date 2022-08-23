@@ -634,7 +634,7 @@
 }
 .furniture__img:hover {
   cursor: pointer;
-  opacity: 0.8;
+  filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
 }
 
 /* Menu bedroom layout */
@@ -664,7 +664,7 @@
 }
 
 .menu-bedroom__img:hover {
-  opacity: 0.8;
+  filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
   /* background-color: #ccc; */
 }
 
@@ -759,15 +759,15 @@
 }
 
 .section-hero__img-t-r:hover {
-  opacity: 0.8;
+  filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
 }
 
 .section-hero__img-b-r:hover {
-  opacity: 0.8;
+  filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
 }
 
 .section-hero__img-b-l:hover {
-  opacity: 0.8;
+  filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
 }
 
 .section-hero__wrap-img-b-l {
